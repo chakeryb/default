@@ -17,11 +17,11 @@
 
 :root {
 
-    --green: #909196 ; /* رمادي */ /*#45adf3*/
+    --green: #ada8a8 ; /* رمادي */ /*#45adf3*/                       /* 8ayaret*/
   
     --dark-color: rgba(240, 10, 10, 0.5); /*hover */
   
-    --black: rgb(46, 25, 46); /* for the title */
+    --black: rgb(58, 56, 56); /* for the title */ /* rgb(46, 25, 46); */            /* 8ayaret*/
     
     --light-color: rgb(58, 56, 56); /*للكتابة */
 
@@ -33,6 +33,17 @@
     --border-hover: .1rem solid var(--black);
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
+
+*:hover{
+
+    text-decoration-line: none !important; 
+}
+
+
+
+
+
+
 
 
 * {
@@ -46,6 +57,9 @@
     text-transform: capitalize;
     transition: all .2s linear;
     transition: width none;
+    
+
+
 
 }
 
@@ -100,9 +114,11 @@ html::-webkit-scrollbar-thumb {
 /*  end test*/
 
 /* start header css*/
+
+
 .header .header-1 {
     background: #fff;
-    padding: 1.5rem 9%;
+    padding: 1.5rem 9% !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -145,6 +161,8 @@ html::-webkit-scrollbar-thumb {
     color: var(--black);
 }
 
+
+
 .header .header-1 .search-form label {
     font-size: 2.5rem;
     padding-right: 1.5rem;
@@ -156,7 +174,17 @@ html::-webkit-scrollbar-thumb {
 
     color: var(--dark-color);
     cursor: pointer;
+ 
+
 }
+
+
+
+
+
+
+
+
 
 .header .header-1 .icons div,
 .header .header-1 .icons a {
@@ -188,20 +216,20 @@ html::-webkit-scrollbar-thumb {
 
 }
 
-.header .header-2 .navbar {
+.header .header-2 .navbare {
     text-align: right;
     /* ana zedta by default center*/
 
 }
 
-.header .header-2 .navbar a {
+.header .header-2 .navbare a {
     color: #FFF;
     display: inline-block;
     padding: 1.2rem;
     font-size: 1.7rem;
 }
 
-.header .header-2 .navbar a:hover {
+.header .header-2 .navbare a:hover {
     background: var(--dark-color);
     padding-left: 35px;
     padding-right: 35px;
@@ -224,10 +252,14 @@ html::-webkit-scrollbar-thumb {
     left: 0;
     right: 0;
     z-index: 1000;
+    
+    
 }
 
 
-.bottom-navbar {
+
+
+.bottom-navbare {
     text-align: center;
     background: var(--green);
     position: absolute;
@@ -240,7 +272,7 @@ html::-webkit-scrollbar-thumb {
 
 }
 
-.bottom-navbar a {
+.bottom-navbare a {
     font-size: 1.5rem;
     /* 2 */
     padding: .5rem;
@@ -249,7 +281,7 @@ html::-webkit-scrollbar-thumb {
 
 }
 
-.bottom-navbar a:hover {
+.bottom-navbare a:hover {
     background: var(--dark-color);
     padding: 0 20px 0 20px;
 
@@ -391,14 +423,14 @@ html::-webkit-scrollbar-thumb {
 
     .header .header-1 .search-form.active {
 
-        top: 115%;
+        top: 118%;
         z-index: 10002;
         /* ana zedta */
 
 
     }
 
-    .bottom-navbar {
+    .bottom-navbare {
         display: block;
     }
 
